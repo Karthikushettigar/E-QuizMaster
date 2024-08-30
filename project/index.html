@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-QuizMaster</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to right, #4CAF50, #008CBA);
+            color: white;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 36px;
+            z-index: 999;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px; /* Adjust padding to avoid content overlapping with h1 */
+        }
+
+        .login {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .radio-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .radio-container label {
+            margin-right: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 60px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .log {
+            text-align: center;
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>E-QuizMaster</h1>
+    <div class="container">
+        <div class="login">
+            <div class="radio-container">
+                <form action="index.php" method="POST">
+                    <h2>Username</h2>
+                    <input type="text" placeholder="Enter your Username" name="Username">
+                    <h2>Password</h2>
+                    <input type="password" placeholder="Enter your Password" name="Password">
+                    <h2><a href="forget.html">Forgot Password</a></h2>
+                    <button>Login</button>
+                    <h2>New User! <a href="signup.html">Sign-Up</a></h2>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

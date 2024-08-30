@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staffques</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Form styles */
+        #quizForm {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="quizForm">
+            <form action="add_quiz.php" method="POST">
+                <label for="Quiz_Id">Quiz ID:</label>
+                <input type="text" name="Quiz_Id" id="Quiz_Id" required><br>
+                 
+                <label for="Quiz_Name">Quiz Title:</label>
+                <input type="text" name="Quiz_Name" id="Quiz_Name" required><br>
+                 
+                <label for="Date_Created">Quiz Date:</label>
+                <input type="date" name="Date_Created" id="Date_Created" required><br>
+                <button>Login</button> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
